@@ -21,6 +21,7 @@ font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvet
 ul{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 2vmin;
     justify-content: flex-end;
 }
@@ -99,11 +100,12 @@ ul{
   }
   .social-media{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 6vmin;
   }
   .social-media img{
-    width: 2.5rem;
+    width: 8vmin;
     
   }
