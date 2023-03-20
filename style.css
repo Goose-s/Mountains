@@ -38,7 +38,7 @@ ul{
 }
 .year{
     font-size: 4rem;
-    margin-left: 8rem;
+    margin-left: 13.5rem;
     font-weight: bold;
  }
 .cards{
@@ -54,14 +54,19 @@ ul{
     background-color: white;
     border: 1px solid #eee;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    transition: 0.3s;
     border-radius: 4px;
     display: absolute;
     gap: 5vmin;
   }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
   .card img{
-    width: 80vmin;
-    height: 60vmin;
-    margin: -4px;
+    width: 100%;
+    height: max(60vmin);
+    object-fit: cover;
+    aspect-ratio: 4/3;
   }
   .card p{
     display: flex;
