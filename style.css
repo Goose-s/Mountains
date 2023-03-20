@@ -15,22 +15,23 @@ font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvet
 .header a{
     color: black;
     text-decoration-line: none;
-    font-size: 3vmin;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 ul{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 2vmin;
+    gap: 2rem;
     justify-content: flex-end;
 }
 .logo img{
     width: auto;
-    height: 10vmin;
+    height: 15vmin;
     
 }
 .logo{
+    font-size: 2rem;
     display: flex;
     align-items: center;
     gap: 1vmin;
@@ -91,6 +92,9 @@ ul{
     display: flex;
     background-color: black;
     justify-content: space-between;
+  }
+  .nameOfCompany{
+    font-size: 1.5rem;
   }
   .social-media a, .contacts a, .email{
     color: white;
