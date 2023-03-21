@@ -2,10 +2,15 @@ body{
 background-color: #edede9;
 margin: -5px;
 font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+overflow-x: hidden;
+-ms-overflow-style: none;  
+scrollbar-width: none;  
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 .header{
     display: flex;
-    flex: 1;
     align-items: center;
     justify-content: space-between;
     background-color: white;
@@ -38,7 +43,7 @@ ul{
 }
 .year{
     font-size: 4rem;
-    margin-left: 13.5rem;
+    margin-left: 11vmin;
     font-weight: bold;
  }
 .cards{
@@ -70,15 +75,14 @@ ul{
   }
   .card p{
     display: flex;
-    margin-left: 2rem;
+    margin: 2rem;
   }
   .cardHeader {
     font-size: 1.5rem;
     font-weight: bold;
   }
-  .cardDate, .cardText{
+  .cardText{
     font-size: 1rem;
-    margin: -0.5px;
   }
   .price{
     font-size: 1rem;
@@ -91,8 +95,9 @@ ul{
   }
   .footer
   {
+    align-items: center;
     color: white;
-    padding: 2rem;
+    padding: 3vmin;
     margin-top: 2rem;
     display: flex;
     background-color: black;
@@ -118,3 +123,35 @@ ul{
     width: 3rem;
     
   }
+   /*--------------------css for small screens----------------*/
+   @media only screen and (max-width: 600px){
+    .header{
+     width: fit-content;
+
+    }
+    .header h3{
+      font-size: 3vmin;
+    }
+    .header a{
+      font-size: 3vmin;
+    }
+    ul{
+      gap: 2vmin;
+      flex-direction: row;
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    .card{
+      width: 90vmin;
+      margin-left: 1vmin;
+    }
+    .year{
+      font-size: 8vmin;
+    }
+    .contacts p, .contacts a{
+      font-size: 3vmin;
+    }
+    .social-media img{
+      width: 10vmin;
+    }
+   }
